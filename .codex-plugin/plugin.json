@@ -1,0 +1,44 @@
+{
+  "name": "boss-zhipin-resume-sync",
+  "version": "0.1.0",
+  "description": "Parse a local resume document and synchronize it into a user-authorized BOSS Zhipin online resume through Microsoft Edge.",
+  "author": {
+    "name": "520mxj",
+    "url": "https://github.com/520mxj"
+  },
+  "homepage": "https://github.com/520mxj/boss-zhipin-resume-sync",
+  "repository": "https://github.com/520mxj/boss-zhipin-resume-sync",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "claude",
+    "dsh",
+    "resume",
+    "boss-zhipin",
+    "browser-automation",
+    "edge",
+    "pdf",
+    "docx"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "BOSS Resume Sync",
+    "shortDescription": "Parse and sync resumes to BOSS Zhipin",
+    "longDescription": "Use an uploaded PDF, DOCX, HTML, Markdown, or text resume to update the signed-in BOSS Zhipin online resume in Microsoft Edge. The shared skill and Node CLI work across Codex, Claude Code, and DeepSeek Harness.",
+    "developerName": "BOSS Resume Sync contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Parse this resume and sync it to my BOSS Zhipin online resume",
+      "Compare this PDF with my BOSS resume and update only the changed sections",
+      "Sync this DOCX to BOSS Zhipin while preserving my project experience"
+    ],
+    "brandColor": "#0F766E",
+    "screenshots": []
+  }
+}
+

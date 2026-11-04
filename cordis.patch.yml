@@ -1,0 +1,7 @@
+# DSH bundle profile patch.
+# Install with:
+#   dsh plugin add github:520mxj/boss-zhipin-resume-sync
+- insert:
+    - id: boss-zhipin-resume-sync
+      name: boss-zhipin-resume-sync
+

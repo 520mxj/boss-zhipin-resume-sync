@@ -1,0 +1,17 @@
+{
+  "name": "boss-zhipin-resume-sync",
+  "version": "0.1.0",
+  "description": "Parse a local resume document and synchronize it into a user-authorized BOSS Zhipin online resume through Microsoft Edge.",
+  "author": {
+    "name": "520mxj",
+    "url": "https://github.com/520mxj"
+  },
+  "repository": "https://github.com/520mxj/boss-zhipin-resume-sync",
+  "homepage": "https://github.com/520mxj/boss-zhipin-resume-sync",
+  "license": "MIT",
+  "skills": [
+    "./skills/boss-zhipin-resume-sync"
+  ]
+}
+
+

@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/boss-zhipin-resume-sync/resume.schema.json",
+  "title": "Resume sync document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "profile",
+    "summary",
+    "preferredPositions",
+    "workExperiences",
+    "projects",
+    "education",
+    "certifications",
+    "skills",
+    "sync"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "extractedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "displayName"
+      ],
+      "properties": {
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "headline": {
+          "type": "string"
+        },
+        "currentStatus": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "birthMonth": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}$"
+        },
+        "workStartMonth": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}$"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+        },
+        "wechat": {
+          "type": "string"
+        }
+      }
+    },
+    "summary": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preferredPositions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "salary": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "employmentType": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "workExperiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "company",
+          "title",
+          "start",
+          "end",
+          "responsibilities"
+        ],
+        "properties": {
+          "company": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "department": {
+            "type": "string"
+          },
+          "employmentType": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}$"
+          },
+          "end": {
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}|至今)$"
+          },
+          "responsibilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "achievements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string"
+          },
+          "end": {
+            "type": "string"
+          },
+          "description": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "school",
+          "major",
+          "degree",
+          "start",
+          "end"
+        ],
+        "properties": {
+          "school": {
+            "type": "string",
+            "minLength": 1
+          },
+          "major": {
+            "type": "string"
+          },
+          "degree": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{4}$"
+          },
+          "end": {
+            "type": "string",
+            "pattern": "^\\d{4}$"
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "items"
+        ],
+        "properties": {
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "sync": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserveProjects",
+        "deleteMissing"
+      ],
+      "properties": {
+        "preserveProjects": {
+          "type": "boolean"
+        },
+        "deleteMissing": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
+

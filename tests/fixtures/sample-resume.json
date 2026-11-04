@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "sample-resume.html",
+    "format": "html"
+  },
+  "profile": {
+    "displayName": "测试先生",
+    "headline": "IT 技术支持 / 运维工程师",
+    "currentStatus": "离职-随时到岗",
+    "location": "深圳"
+  },
+  "summary": [
+    "熟悉 Windows 与 Linux 基础运维",
+    "能独立完成设备排障与网络配置"
+  ],
+  "preferredPositions": [
+    {
+      "title": "运维工程师",
+      "salary": "4-8K",
+      "city": "深圳",
+      "employmentType": "全职"
+    }
+  ],
+  "workExperiences": [
+    {
+      "company": "示例科技有限公司",
+      "title": "运维工程师",
+      "start": "2024-01",
+      "end": "2025-01",
+      "responsibilities": [
+        "负责终端设备巡检与故障处理"
+      ]
+    }
+  ],
+  "projects": [],
+  "education": [
+    {
+      "school": "示例职业学院",
+      "major": "软件技术",
+      "degree": "大专",
+      "start": "2021",
+      "end": "2024"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "计算机一级"
+    }
+  ],
+  "skills": [
+    {
+      "category": "系统与网络",
+      "items": [
+        "Windows",
+        "Linux",
+        "TCP/IP"
+      ]
+    }
+  ],
+  "sync": {
+    "preserveProjects": true,
+    "deleteMissing": false
+  }
+}
+

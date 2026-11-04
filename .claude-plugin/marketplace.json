@@ -1,0 +1,26 @@
+{
+  "name": "boss-resume-sync",
+  "owner": {
+    "name": "520mxj",
+    "url": "https://github.com/520mxj"
+  },
+  "metadata": {
+    "description": "Cross-agent resume synchronization for BOSS Zhipin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "boss-zhipin-resume-sync",
+      "source": "./",
+      "description": "Parse a PDF, DOCX, HTML, Markdown, or text resume and synchronize it into the BOSS Zhipin online resume through Microsoft Edge.",
+      "version": "0.1.0",
+      "author": {
+        "name": "520mxj",
+        "url": "https://github.com/520mxj"
+      },
+      "homepage": "https://github.com/520mxj/boss-zhipin-resume-sync",
+      "license": "MIT",
+      "category": "productivity"
+    }
+  ]
+}
